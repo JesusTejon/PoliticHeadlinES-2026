@@ -4,7 +4,7 @@ Este repositorio contiene el código fuente y el cuaderno de experimentación ut
 
 ## ⚙️ Descripción del Sistema
 
-El flujo de trabajo (pipeline) implementado en el cuaderno principal sigue las siguientes fases:
+El flujo de trabajo (pipeline) implementado en el cuaderno principal sigue las siguientes fases principales:
 
 ### 1. Preprocesamiento de Datos y Estrategia *Head+Tail*
 Debido a la longitud de los artículos periodísticos, se aplica una técnica de truncamiento asimétrico (Head+Tail). 
@@ -18,7 +18,7 @@ El cuaderno integra el framework `optuna` para buscar la mejor configuración de
 * Se ejecutan 10 *trials* (pruebas) buscando optimizar el `eval_f1` (F1-score en validación).
 * El espacio de búsqueda explora la tasa de aprendizaje (learning rate), decaimiento de pesos (weight decay), ratio de calentamiento (warmup ratio) y el número de épocas de entrenamiento.
 
-### 5. Evaluación (PA-nDCG)
+### 3. Evaluación (PA-nDCG)
 Aunque el modelo se entrena maximizando el F1-Score, el cuaderno incluye funciones completas para reordenar las probabilidades generadas por el modelo y evaluar el rendimiento utilizando la métrica oficial de la competición: **PA-nDCG**.
 
 ---
