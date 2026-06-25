@@ -1,4 +1,4 @@
-# PoliticHeadlinES - Entrenamiento de Selección de Titulares
+# PoliticHeadlinES - I2C PERSEUS UHU
 
 Este repositorio contiene el código fuente y el cuaderno de experimentación utilizado para la tarea de selección de titulares de noticias políticas. El sistema evalúa la relevancia semántica entre el cuerpo de una noticia y diferentes candidatos a titular, formulando el problema como una tarea de clasificación binaria.
 
